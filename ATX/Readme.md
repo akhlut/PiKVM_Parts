@@ -64,5 +64,8 @@ PORT D
 
     GPIO 06 - IDE LED
 
+---
 
 There is also a port to control an external switch.  A DC barrel jack is provided for connectivity.  There is no polarity, simply Common/Normally Open.  This is useful to control external HDMI/KVM switches.
+
+EXTERNAL CONTROL PORT - GPIO 21
