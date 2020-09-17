@@ -1,6 +1,6 @@
 # PiKVM_Parts
 
-Random parts I've made for the PiKVM Prroject.  https://github.com/pikvm/pikvm
+Random parts I've made for the PiKVM Project.  https://github.com/pikvm/pikvm
 
 All parts are UNTESTED as of 9/15/2020
 
