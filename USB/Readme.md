@@ -2,9 +2,9 @@ PiKVM USB splitter design notes
 
 AS OF 09152020 THIS DESIGN IS INCOMPLETE!!!
 
-This design uses Analog Devices ADUM3160 iCoupler to provide galvanic isolation between the input USB and the output ports.
+This design uses Analog Devices ADUM3160 iCouplers to provide galvanic isolation between the input USB and the output ports.
 
-The GPIO pinout (v1) is as follows:
+The GPIO pinout (v1.5) is as follows:
 
 PORT A
 
