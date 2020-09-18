@@ -2,23 +2,23 @@ PiKVM ATX controller design notes
 
 This design uses RJ45 connectors as they are cheap, compact, and ubiquitous.
 
-The RJ45 pinout (v1) uses the T-568B pattern and is as follows:
+The RJ45 pinout (v1.5) uses the T-568B pattern and is as follows:
 
-    W-O: POWER LED +
+    PIN_1 : W-O : POWER LED +
 
-    O-W: POWER LED -
+    PIN_2 : O-W : POWER LED -
 
-    W-G: IDE LED -
+    PIN_3 : W-G : IDE LED -
 
-    Bl-W: RESET -
+    PIN_4 : Bl-W : RESET -
 
-    W-Bl: RESET +
+    PIN_5 : W-Bl : RESET +
 
-    G-W: IDE LED +
+    PIN_6 : G-W : IDE LED +
 
-    W-Br: POWER +
+    PIN_7 : W-Br : POWER +
 
-    Br-W: POWER -
+    PIN_8 : Br-W : POWER -
 
 -----
 
@@ -28,11 +28,11 @@ PORT A
 
     GPIO 03 - POWER
 
-    GPIO 04 - RESET
+    GPIO 15 - RESET
 
-    GPIO 14 - POWER LED
+    GPIO 04 - POWER LED
 
-    GPIO 15 - IDE LED
+    GPIO 14 - IDE LED
 
 PORT B
 
@@ -48,21 +48,21 @@ PORT C
 
     GPIO 10 - POWER
 
-    GPIO 09 - RESET
+    GPIO 08 - RESET
 
-    GPIO 25 - POWER LED
+    GPIO 09 - POWER LED
 
-    GPIO 08 - IDE LED
+    GPIO 25 - IDE LED
 
 PORT D
 
     GPIO 07 - POWER
 
-    GPIO 05 - RESET
+    GPIO 06 - RESET
 
     GPIO 12 - POWER LED
 
-    GPIO 06 - IDE LED
+    GPIO 05 - IDE LED
 
 ---
 
