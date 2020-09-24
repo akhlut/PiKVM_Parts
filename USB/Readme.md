@@ -1,10 +1,10 @@
 PiKVM USB splitter design notes
 
-AS OF 09182020 THIS DESIGN IS INCOMPLETE!!!
+AS OF 09232020 THIS DESIGN IS COMPLETE BUT UNTESTED!!!
 
-This design uses Analog Devices ADUM3160 iCouplers to provide galvanic isolation between the input USB and the output ports.
+This design uses Analog Devices ADUM3160 iCouplers to provide galvanic isolation between the OTG USB and the (4) external USB ports.
 
-The GPIO pinout (v1.5) is as follows:
+The GPIO pinout (v1.6) is as follows:
 
 PORT A
 
@@ -21,3 +21,18 @@ PORT C
 PORT D
 
     GPIO 13
+
+The OTG port can be switched to Ports A-D by holding GPIO HIGH.  
+
+The OTG port does NOT supply power to the Raspberry Pi!  
+
+Power the Pi by either: 
+
+(1) Use the POWER-IN Port on the PCB to supply 5V to the PCB and Pi via the GPIO header
+
+OR
+
+(2) Use a POE hat to power the PI and use jumper cables to power the PCB @ AUX_PWR header
+
+NEVER USE BOTH POWER OPTIONS AT ONCE!
+
